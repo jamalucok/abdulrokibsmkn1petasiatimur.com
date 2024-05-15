@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>SMKN 1 PETASIA TIMUR</title>
+  <link rel="icon" href="assets/images/LOGOPETIR.jpg" type="image/png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+</head>
+
+<body>
+
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>SMKN 1</em> PETIR</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="alamat.html">Alamat</a></li>
+        <!-- <li><a href="list_buku.html" class="external">list</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>GALERI SMKN 1 PETASIA TIMUR</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Gambar Sekolah</a></li>
+              <li><a href='#tabs-2'>Gedung</a></li>
+              <li><a href='#tabs-3'>Guru Berkualitas</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/scho.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Gambar Sekolah</h4>
+                    <p>Berikut adalah gambar sekolah,di mana foto tersebut merupakan ruangan bagian kantor</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/gedung tp.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Gedung</h4>
+                    <p>Berikut adalah gambar gedung,di mana di gedung ini adalah tempat praktek kejuruan khususnya untuk jurusan teknik pengelasan. gedung tersebut juga di pakai sebagai tempat rapat.</p>
+                    <!-- <p>continue....</p> -->
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/guru.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Guru Berkualitas</h4>
+                    <p>Para guru mengabdikan sepenuh hati untuk menciptakan dan menerapkan lingkungan belajar yang menyenangkan, interaktif, dan 
+                      bermanfaat bagi seluruh siswa/i. Selain itu juga membimbing seluruh siswa menuju kesuksesan dan pengembangan karakter si anak. </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    $(document).ready(function() {
+      // Mengaktifkan smooth scrolling untuk menu yang diklik
+      $('.main-menu a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+
+      // Mengubah status aktif pada menu saat digulir
+      $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        // Assign active class pada navigasi berdasarkan scroll position
+        $('.section').each(function(i) {
+          if ($(this).position().top <= scrollDistance + 100) {
+            $('.main-menu a.active').removeClass('active');
+            $('.main-menu a').eq(i).addClass('active');
+          }
+        });
+      }).scroll();
+    });
+  </script>
+</body>
+
+</html>

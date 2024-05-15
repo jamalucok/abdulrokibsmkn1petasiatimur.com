@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>SMKN 1 PETASIA TIMUR</title>
+  <link rel="icon" href="assets/images/LOGOPETIR.jpg" type="image/png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+</head>
+
+<body>
+
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>SMKN 1</em> PETIR</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="jurusan.html">Jurusan</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="alamat.html">Alamat</a></li>
+        <!-- <li><a href="list_buku.html" class="external">list</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Jurusan</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/images/RPL.jpg" alt="Course #1">
+            <div class="down-content">
+              <h4>
+                Rekayasa Perangkat Lunak (RPL), adalah jurusan yang mengajarkan kita untuk meranjang dan membuat suat web. jurusan ini bisa menjadikan kita sebagai webdisainer dan masi banyak lagi.
+              </h4>
+              <!-- <p>I'm startin' to feel some sort of way You give me goosebumps every day And when you look at me and
+                smile I wanna say.</p> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/DPIB.jpg" alt="Course #2">
+            <div class="down-content">
+              <h4>
+                Desain Permodelan Informasi Bangunan (DPIB), adalah jurusan yang memberi suatu pengetahuan tentang informasi dan permodelan dalam struktur.
+                </h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/DKV.jpg" alt="Course #3">
+            <div class="down-content">
+              <h4>DKV
+                Desain Komunikasi Visual (DKV), adalah jurusan bergerak dalam bidang edit dan cetak. bidang ini bisa mengasah kemampuan kita dalam berimajinasi dengan luas.
+                </h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/TAB.jpg" alt="Course #5">
+            <div class="down-content">
+              <h4>TAB
+                Teknik Alat Berat (TAB), adalah jurusan yang mempelajari alat berat seperti exavator dan masi banyak lagi. jurusan ini bisa melatih skil untuk membawa alat berat.
+                </h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/TP.jpg" alt="Course #6">
+            <div class="down-content">
+              <h4>TP
+                Teknik Pengelasan (TP), adalah jurusan yang mengajarkan cara dan teknik mengelas dengan baik sehingga tamat bisa langsung berkerja di industri atau perusahaan.</h4>
+            </div>
+          </div>
+  </section>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    $(document).ready(function() {
+      // Mengaktifkan smooth scrolling untuk menu yang diklik
+      $('.main-menu a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+
+      // Mengubah status aktif pada menu saat digulir
+      $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        // Assign active class pada navigasi berdasarkan scroll position
+        $('.section').each(function(i) {
+          if ($(this).position().top <= scrollDistance + 100) {
+            $('.main-menu a.active').removeClass('active');
+            $('.main-menu a').eq(i).addClass('active');
+          }
+        });
+      }).scroll();
+    });
+  </script>
+</body>
+
+</html>

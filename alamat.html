@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+    <title>SMKN 1 PETASIA TIMUR</title>
+    <link rel="icon" href="assets/images/LOGOPETIR.jpg" type="image/png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="#"><em>SMKN 1</em> PETIR</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="jurusan.html">Jurusan</a></li>
+          <!-- <li><a href="#section5">Video</a></li> -->
+          <li><a href="alamat.html">Alamat</a></li>
+          <!-- <li><a href="list_buku.html" class="external">list</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <section class="section contact" data-section="section6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>KONTAK DAN ALAMAT</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+
+            <form id="contact" action="" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Nama Anda" required="" />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Pesan Anda..." required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button  type="submit" id="form-submit" class="button">
+                      <a href="https://wa.me/6282257224366" >Kirim Sekarang</a>
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+            <script>
+              const form = document.getElementById("contact");
+
+              form.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const message = document.getElementById("message").value;
+                const nameText = `Perkenalkan saya ${name}`;
+                const url = `https://wa.me/6282257224366=${encodeURIComponent(nameText)} : %0A${encodeURIComponent(message)}`;
+
+                window.open(url, "_blank");
+              });
+            </script>
+          </div>
+          <div class="col-md-6">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.7601432354745!2d121.43419!3d-2.2434693000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d901144a62d5e79%3A0x680c348fdc72d331!2sSMKN%201%20PETASIA%20TIMIR!5e0!3m2!1sid!2sid!4v1715158736017!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p><i class="fa fa-copyright"></i> Tugas finis 2024 by | <a href="https://github.com/Shizu-ka" rel="sponsored" target="_parent">Abdul Rokib</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      $(document).ready(function () {
+        // Mengaktifkan smooth scrolling untuk menu yang diklik
+        $('.main-menu a[href^="#"]').on("click", function (event) {
+          var target = $(this.getAttribute("href"));
+          if (target.length) {
+            event.preventDefault();
+            $("html, body").stop().animate(
+              {
+                scrollTop: target.offset().top,
+              },
+              1000
+            );
+          }
+        });
+
+        // Mengubah status aktif pada menu saat digulir
+        $(window)
+          .scroll(function () {
+            var scrollDistance = $(window).scrollTop();
+            // Assign active class pada navigasi berdasarkan scroll position
+            $(".section").each(function (i) {
+              if ($(this).position().top <= scrollDistance + 100) {
+                $(".main-menu a.active").removeClass("active");
+                $(".main-menu a").eq(i).addClass("active");
+              }
+            });
+          })
+          .scroll();
+      });
+    </script>
+  </body>
+</html>
